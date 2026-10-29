@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "policycompass"
+version = "0.1.0"
+description = "Auditable contextual-bandit policy evaluation with support checks and paired uncertainty diagnostics"
+requires-python = ">=3.12"
+readme = "README.md"
+license = "MIT"
+authors = [{name = "Soham Jindal"}]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/brohum10/policycompass"
+Issues = "https://github.com/brohum10/policycompass/issues"
+
+[project.scripts]
+policycompass = "policycompass.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["policycompass*"]
+
+[tool.black]
+line-length = 100

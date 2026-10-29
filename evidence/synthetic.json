@@ -1,0 +1,665 @@
+{
+  "kind": "synthetic model-router study; no provider calls",
+  "reward": "binary synthetic success; costs and latency are not modeled",
+  "scenarios": {
+    "explored": {
+      "report": {
+        "baseline": "baseline",
+        "bootstrap": {
+          "model": "fixed; fit rows are not resampled",
+          "resamples": 400,
+          "seed": 20261029,
+          "unit": "independent eval row"
+        },
+        "candidate": "candidate",
+        "candidate_minus_baseline": {
+          "dm": {
+            "estimate": 0.05859324009324007,
+            "percentile_95": [
+              0.043030182595182626,
+              0.07597006410256404
+            ],
+            "resamples": 400,
+            "undefined_resamples": 0
+          },
+          "dr": {
+            "estimate": 0.05605431235431246,
+            "percentile_95": [
+              -0.014994630924630844,
+              0.1374160081585081
+            ],
+            "resamples": 400,
+            "undefined_resamples": 0
+          },
+          "ips": {
+            "estimate": -0.08333333333333326,
+            "percentile_95": [
+              -0.2866666666666666,
+              0.10008333333333323
+            ],
+            "resamples": 400,
+            "undefined_resamples": 0
+          },
+          "snips": {
+            "estimate": 0.0628657487091222,
+            "percentile_95": [
+              -0.008994976967581473,
+              0.13213613262395701
+            ],
+            "resamples": 400,
+            "undefined_resamples": 0
+          }
+        },
+        "dataset_sha256": "30ed63367d8d1c15df29c69d870f212f9e26abf813dbad468b779dd0704777f7",
+        "interpretation": "Diagnostic estimates only; not an automatic deployment decision.",
+        "policies": {
+          "baseline": {
+            "by_segment": {
+              "code": {
+                "diagnostics": {
+                  "effective_sample_size": 44.0,
+                  "max_weight": 4.0,
+                  "mean_weight": 1.1503267973856208,
+                  "positive_weight_rows": 44,
+                  "rows": 153,
+                  "weight_sum": 176.0
+                },
+                "estimates": {
+                  "dm": 0.75,
+                  "dr": 0.75,
+                  "ips": 0.8627450980392157,
+                  "snips": 0.75
+                }
+              },
+              "lookup": {
+                "diagnostics": {
+                  "effective_sample_size": 90.0,
+                  "max_weight": 4.0,
+                  "mean_weight": 1.0434782608695652,
+                  "positive_weight_rows": 90,
+                  "rows": 345,
+                  "weight_sum": 360.0
+                },
+                "estimates": {
+                  "dm": 0.9487179487179488,
+                  "dr": 0.8630992196209588,
+                  "ips": 0.9043478260869565,
+                  "snips": 0.8666666666666667
+                }
+              },
+              "reasoning": {
+                "diagnostics": {
+                  "effective_sample_size": 32.0,
+                  "max_weight": 4.0,
+                  "mean_weight": 1.2549019607843137,
+                  "positive_weight_rows": 32,
+                  "rows": 102,
+                  "weight_sum": 128.0
+                },
+                "estimates": {
+                  "dm": 0.5454545454545454,
+                  "dr": 0.8413547237076648,
+                  "ips": 0.9803921568627451,
+                  "snips": 0.78125
+                }
+              }
+            },
+            "diagnostics": {
+              "effective_sample_size": 166.0,
+              "max_possible_weight_on_eval_contexts": 4.0,
+              "max_weight": 4.0,
+              "mean_target_mass_using_fallback": 0.0,
+              "mean_weight": 1.1066666666666667,
+              "positive_weight_rows": 166,
+              "rows": 600,
+              "target_cells_without_eval_observations": [],
+              "weight_sum": 664.0
+            },
+            "estimates": {
+              "dm": 0.8294900932400933,
+              "dr": 0.8305623543123543,
+              "ips": 0.9066666666666666,
+              "snips": 0.8192771084337349
+            },
+            "intervals": {
+              "dm": {
+                "percentile_95": [
+                  0.8164180264180264,
+                  0.8411613733488733
+                ],
+                "resamples": 400,
+                "undefined_resamples": 0
+              },
+              "dr": {
+                "percentile_95": [
+                  0.7594517773892775,
+                  0.892307935120435
+                ],
+                "resamples": 400,
+                "undefined_resamples": 0
+              },
+              "ips": {
+                "percentile_95": [
+                  0.7733333333333333,
+                  1.0401666666666665
+                ],
+                "resamples": 400,
+                "undefined_resamples": 0
+              },
+              "snips": {
+                "percentile_95": [
+                  0.7577592697157914,
+                  0.8728323699421965
+                ],
+                "resamples": 400,
+                "undefined_resamples": 0
+              }
+            },
+            "warnings": []
+          },
+          "candidate": {
+            "by_segment": {
+              "code": {
+                "diagnostics": {
+                  "effective_sample_size": 32.0,
+                  "max_weight": 4.0,
+                  "mean_weight": 0.8366013071895425,
+                  "positive_weight_rows": 32,
+                  "rows": 153,
+                  "weight_sum": 128.0
+                },
+                "estimates": {
+                  "dm": 1.0,
+                  "dr": 0.9215686274509803,
+                  "ips": 0.7581699346405228,
+                  "snips": 0.90625
+                }
+              },
+              "lookup": {
+                "diagnostics": {
+                  "effective_sample_size": 168.0,
+                  "max_weight": 2.0,
+                  "mean_weight": 0.9739130434782609,
+                  "positive_weight_rows": 168,
+                  "rows": 345,
+                  "weight_sum": 336.0
+                },
+                "estimates": {
+                  "dm": 0.8299999999999998,
+                  "dr": 0.8622318840579709,
+                  "ips": 0.8405797101449275,
+                  "snips": 0.8630952380952381
+                }
+              },
+              "reasoning": {
+                "diagnostics": {
+                  "effective_sample_size": 24.0,
+                  "max_weight": 4.0,
+                  "mean_weight": 0.9411764705882353,
+                  "positive_weight_rows": 24,
+                  "rows": 102,
+                  "weight_sum": 96.0
+                },
+                "estimates": {
+                  "dm": 0.9166666666666666,
+                  "dr": 0.9166666666666666,
+                  "ips": 0.8627450980392157,
+                  "snips": 0.9166666666666666
+                }
+              }
+            },
+            "diagnostics": {
+              "effective_sample_size": 200.0,
+              "max_possible_weight_on_eval_contexts": 4.0,
+              "max_weight": 4.0,
+              "mean_target_mass_using_fallback": 0.0,
+              "mean_weight": 0.9333333333333333,
+              "positive_weight_rows": 224,
+              "rows": 600,
+              "target_cells_without_eval_observations": [],
+              "weight_sum": 560.0
+            },
+            "estimates": {
+              "dm": 0.8880833333333333,
+              "dr": 0.8866166666666667,
+              "ips": 0.8233333333333334,
+              "snips": 0.8821428571428571
+            },
+            "intervals": {
+              "dm": {
+                "percentile_95": [
+                  0.8831188888888889,
+                  0.8942023611111111
+                ],
+                "resamples": 400,
+                "undefined_resamples": 0
+              },
+              "dr": {
+                "percentile_95": [
+                  0.8403179166666667,
+                  0.9244433333333332
+                ],
+                "resamples": 400,
+                "undefined_resamples": 0
+              },
+              "ips": {
+                "percentile_95": [
+                  0.7232500000000001,
+                  0.93
+                ],
+                "resamples": 400,
+                "undefined_resamples": 0
+              },
+              "snips": {
+                "percentile_95": [
+                  0.8344684405202243,
+                  0.9242173608491837
+                ],
+                "resamples": 400,
+                "undefined_resamples": 0
+              }
+            },
+            "warnings": []
+          }
+        },
+        "reward_model": {
+          "cells": [
+            {
+              "action": "expert",
+              "mean": 1.0,
+              "rows": 15,
+              "segment": "code"
+            },
+            {
+              "action": "lite",
+              "mean": 0.40540540540540543,
+              "rows": 37,
+              "segment": "code"
+            },
+            {
+              "action": "pro",
+              "mean": 0.75,
+              "rows": 20,
+              "segment": "code"
+            },
+            {
+              "action": "expert",
+              "mean": 0.9047619047619048,
+              "rows": 42,
+              "segment": "lookup"
+            },
+            {
+              "action": "lite",
+              "mean": 0.83,
+              "rows": 100,
+              "segment": "lookup"
+            },
+            {
+              "action": "pro",
+              "mean": 0.9487179487179487,
+              "rows": 39,
+              "segment": "lookup"
+            },
+            {
+              "action": "expert",
+              "mean": 0.9166666666666666,
+              "rows": 12,
+              "segment": "reasoning"
+            },
+            {
+              "action": "lite",
+              "mean": 0.3333333333333333,
+              "rows": 24,
+              "segment": "reasoning"
+            },
+            {
+              "action": "pro",
+              "mean": 0.5454545454545454,
+              "rows": 11,
+              "segment": "reasoning"
+            }
+          ],
+          "fallback": 0.76,
+          "training_sha256": "654708ead686c5321a4fd050bd2cd07a429d0160008e9fd8ea5b2837dd323bbf"
+        },
+        "version": 1
+      },
+      "synthetic_truth": {
+        "baseline": 0.8371,
+        "candidate": 0.8842,
+        "candidate_minus_baseline": 0.04710000000000003
+      }
+    },
+    "thin": {
+      "report": {
+        "baseline": "baseline",
+        "bootstrap": {
+          "model": "fixed; fit rows are not resampled",
+          "resamples": 400,
+          "seed": 20261029,
+          "unit": "independent eval row"
+        },
+        "candidate": "candidate",
+        "candidate_minus_baseline": {
+          "dm": {
+            "estimate": -0.07024528948269959,
+            "percentile_95": [
+              -0.08248950953522893,
+              -0.05983426059152683
+            ],
+            "resamples": 400,
+            "undefined_resamples": 0
+          },
+          "dr": {
+            "estimate": 0.48513253055766326,
+            "percentile_95": [
+              -0.09639211474078414,
+              1.5811298721823608
+            ],
+            "resamples": 400,
+            "undefined_resamples": 0
+          },
+          "ips": {
+            "estimate": 1.3695327102803738,
+            "percentile_95": [
+              -0.4440031152647976,
+              4.785227859368047
+            ],
+            "resamples": 400,
+            "undefined_resamples": 0
+          },
+          "snips": {
+            "estimate": 0.13629490661663823,
+            "percentile_95": [
+              -0.0382768596665968,
+              0.21218030146414246
+            ],
+            "resamples": 400,
+            "undefined_resamples": 0
+          }
+        },
+        "dataset_sha256": "d6a766ad11df19610b203a4b401e899ed2710e794d1a5f0df01951060c2965d0",
+        "interpretation": "Diagnostic estimates only; not an automatic deployment decision.",
+        "policies": {
+          "baseline": {
+            "by_segment": {
+              "code": {
+                "diagnostics": {
+                  "effective_sample_size": 32.0,
+                  "max_weight": 4.0,
+                  "mean_weight": 0.8366013071895425,
+                  "positive_weight_rows": 32,
+                  "rows": 153,
+                  "weight_sum": 128.0
+                },
+                "estimates": {
+                  "dm": 0.9333333333333335,
+                  "dr": 0.8061002178649237,
+                  "ips": 0.6535947712418301,
+                  "snips": 0.78125
+                }
+              },
+              "lookup": {
+                "diagnostics": {
+                  "effective_sample_size": 87.0,
+                  "max_weight": 4.0,
+                  "mean_weight": 1.008695652173913,
+                  "positive_weight_rows": 87,
+                  "rows": 345,
+                  "weight_sum": 348.0
+                },
+                "estimates": {
+                  "dm": 0.9047619047619049,
+                  "dr": 0.8732919254658384,
+                  "ips": 0.881159420289855,
+                  "snips": 0.8735632183908046
+                }
+              },
+              "reasoning": {
+                "diagnostics": {
+                  "effective_sample_size": 23.0,
+                  "max_weight": 4.0,
+                  "mean_weight": 0.9019607843137255,
+                  "positive_weight_rows": 23,
+                  "rows": 102,
+                  "weight_sum": 92.0
+                },
+                "estimates": {
+                  "dm": 0.5,
+                  "dr": 0.6764705882352942,
+                  "ips": 0.6274509803921569,
+                  "snips": 0.6956521739130435
+                }
+              }
+            },
+            "diagnostics": {
+              "effective_sample_size": 142.0,
+              "max_possible_weight_on_eval_contexts": 4.0,
+              "max_weight": 4.0,
+              "mean_target_mass_using_fallback": 0.0,
+              "mean_weight": 0.9466666666666667,
+              "positive_weight_rows": 142,
+              "rows": 600,
+              "target_cells_without_eval_observations": [],
+              "weight_sum": 568.0
+            },
+            "estimates": {
+              "dm": 0.8432380952380952,
+              "dr": 0.8226984126984127,
+              "ips": 0.78,
+              "snips": 0.823943661971831
+            },
+            "intervals": {
+              "dm": {
+                "percentile_95": [
+                  0.8291660714285713,
+                  0.8558232142857143
+                ],
+                "resamples": 400,
+                "undefined_resamples": 0
+              },
+              "dr": {
+                "percentile_95": [
+                  0.7559871031746032,
+                  0.8875313492063491
+                ],
+                "resamples": 400,
+                "undefined_resamples": 0
+              },
+              "ips": {
+                "percentile_95": [
+                  0.66,
+                  0.9134999999999999
+                ],
+                "resamples": 400,
+                "undefined_resamples": 0
+              },
+              "snips": {
+                "percentile_95": [
+                  0.7553883423873146,
+                  0.8881313131313131
+                ],
+                "resamples": 400,
+                "undefined_resamples": 0
+              }
+            },
+            "warnings": []
+          },
+          "candidate": {
+            "by_segment": {
+              "code": {
+                "diagnostics": {
+                  "effective_sample_size": 0.0,
+                  "max_weight": 0.0,
+                  "mean_weight": 0.0,
+                  "positive_weight_rows": 0,
+                  "rows": 153,
+                  "weight_sum": 0.0
+                },
+                "estimates": {
+                  "dm": 0.68,
+                  "dr": 0.68,
+                  "ips": 0.0,
+                  "snips": null
+                }
+              },
+              "lookup": {
+                "diagnostics": {
+                  "effective_sample_size": 257.0,
+                  "max_weight": 1.335113484646195,
+                  "mean_weight": 0.9945627987074553,
+                  "positive_weight_rows": 257,
+                  "rows": 345,
+                  "weight_sum": 343.1241655540721
+                },
+                "estimates": {
+                  "dm": 0.8417266187050358,
+                  "dr": 0.844343669430857,
+                  "ips": 0.8397670323716646,
+                  "snips": 0.8443579766536965
+                }
+              },
+              "reasoning": {
+                "diagnostics": {
+                  "effective_sample_size": 1.0,
+                  "max_weight": 1000.0,
+                  "mean_weight": 9.803921568627452,
+                  "positive_weight_rows": 1,
+                  "rows": 102,
+                  "weight_sum": 1000.0
+                },
+                "estimates": {
+                  "dm": 0.68,
+                  "dr": 3.817254901960784,
+                  "ips": 9.803921568627452,
+                  "snips": 1.0
+                }
+              }
+            },
+            "diagnostics": {
+              "effective_sample_size": 1.8031564806203206,
+              "max_possible_weight_on_eval_contexts": 1000.0,
+              "max_weight": 1000.0,
+              "mean_target_mass_using_fallback": 0.425,
+              "mean_weight": 2.2385402759234534,
+              "positive_weight_rows": 258,
+              "rows": 600,
+              "target_cells_without_eval_observations": [
+                {
+                  "action": "expert",
+                  "segment": "code"
+                }
+              ],
+              "weight_sum": 1343.124165554072
+            },
+            "estimates": {
+              "dm": 0.7729928057553956,
+              "dr": 1.307830943256076,
+              "ips": 2.149532710280374,
+              "snips": 0.9602385685884692
+            },
+            "intervals": {
+              "dm": {
+                "percentile_95": [
+                  0.7662541966426859,
+                  0.7786599760191847
+                ],
+                "resamples": 400,
+                "undefined_resamples": 0
+              },
+              "dr": {
+                "percentile_95": [
+                  0.7544852084153771,
+                  2.391593052511262
+                ],
+                "resamples": 400,
+                "undefined_resamples": 0
+              },
+              "ips": {
+                "percentile_95": [
+                  0.44275700934579443,
+                  5.505229194481531
+                ],
+                "resamples": 400,
+                "undefined_resamples": 0
+              },
+              "snips": {
+                "percentile_95": [
+                  0.8070615400736505,
+                  0.9870846418917576
+                ],
+                "resamples": 400,
+                "undefined_resamples": 0
+              }
+            },
+            "warnings": [
+              "low_effective_sample_size",
+              "large_importance_weight",
+              "target_cell_not_observed_in_eval",
+              "reward_model_fallback_used"
+            ]
+          }
+        },
+        "reward_model": {
+          "cells": [
+            {
+              "action": "lite",
+              "mean": 0.3157894736842105,
+              "rows": 57,
+              "segment": "code"
+            },
+            {
+              "action": "pro",
+              "mean": 0.9333333333333333,
+              "rows": 15,
+              "segment": "code"
+            },
+            {
+              "action": "lite",
+              "mean": 0.841726618705036,
+              "rows": 139,
+              "segment": "lookup"
+            },
+            {
+              "action": "pro",
+              "mean": 0.9047619047619048,
+              "rows": 42,
+              "segment": "lookup"
+            },
+            {
+              "action": "lite",
+              "mean": 0.3142857142857143,
+              "rows": 35,
+              "segment": "reasoning"
+            },
+            {
+              "action": "pro",
+              "mean": 0.5,
+              "rows": 12,
+              "segment": "reasoning"
+            }
+          ],
+          "fallback": 0.68,
+          "training_sha256": "109903717c40c181e4f4ff21157c777295f45f100868388ad37cfca7a772cebd"
+        },
+        "version": 1
+      },
+      "synthetic_truth": {
+        "baseline": 0.8371,
+        "candidate": 0.8842,
+        "candidate_minus_baseline": 0.04710000000000003
+      }
+    },
+    "unsupported": {
+      "report": {
+        "refused": "unsupported policy candidate at row eval-0005: expert"
+      },
+      "synthetic_truth": {
+        "baseline": 0.8371,
+        "candidate": 0.8842,
+        "candidate_minus_baseline": 0.04710000000000003
+      }
+    }
+  },
+  "seed": 20261029
+}
